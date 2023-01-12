@@ -1,0 +1,32 @@
+.method-icon {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  /* img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  } */
+  
+  .description {
+    font-size: 18px;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li::before {
+    content: "•";
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
