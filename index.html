@@ -13,10 +13,9 @@
     <script type="text/javascript" src="./js/materialize.min.js"></script>
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#FFD297">
-    <!-- iOS -->
+    <!-- WSPRACIE iOS -->
     <link rel="apple-touch-icon" href="/img/coffee-beans.png">
     <meta name="apple-mobile-web-app-status-bar" content="#FFD297">
-
   </head>
 
   <body>
@@ -81,6 +80,7 @@
     <!-- MENU BOCZNE -->
     <ul id="side-menu" class="sidenav side-menu">
       <li><a class="subheader">Coffee <span>Brewer</span></a></li>
+     
       <li><a href="./index.html" class="waves-effect">
         <i class="material-icons">home</i>Ekran główny</a>
       </li>
@@ -88,14 +88,12 @@
         <i class="material-icons">free_breakfast</i>Zapisane kawy</a>
       </li>
       <li><div class="divider"></div></li>
-      <li><a href="./pages/author.html" class="waves-effect">
-        <i class="material-icons">person</i>O mnie</a>
-      </li>
       <li><a href="./pages/licenses.html" class="waves-effect">
         <i class="material-icons">description</i>Licencje</a>
       </li>
     </ul>
 
+    <!-- FIREBASE --> 
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
     <script>
@@ -108,7 +106,6 @@
         appId: "1:51983230575:web:ce43748c9a12b82d88cf9a",
         measurementId: "G-YK0HGD6ZB0"
       };
-    
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
