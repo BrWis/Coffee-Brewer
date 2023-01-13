@@ -1,19 +1,20 @@
 const recipes = document.querySelector('.recipes');
-
+// materialize
 document.addEventListener('DOMContentLoaded', function() {
-    // nav menu
+    // boczne menu glowne
     const menus = document.querySelectorAll('.side-menu');
     M.Sidenav.init(menus, {edge: 'right'});
 
-    // add recipe form
+    // boczne menu do zapisu kaw
     const forms = document.querySelectorAll('.side-form');
     M.Sidenav.init(forms, {edge: 'left'});
     
+    // obsluga 'select'
     const selects = document.querySelectorAll('select');
     M.FormSelect.init(selects);
 });
 
-//Aktualizuj przepisy
+// Dodawanie do zapisanych kaw
 const renderRecipe = (data, id) => {
     const html = `
     <div class="card-panel recipe row" data-id="${id}">
@@ -37,7 +38,7 @@ const renderRecipe = (data, id) => {
   recipes.innerHTML += html;
 };
 
-//Remove recipe from UI
+// Usuwanie z zapisanych kaw
 const removeRecipe = (id) => {
     const recipe = document.querySelector(`.recipe[data-id=${id}]`);
     recipe.remove();

@@ -1,4 +1,3 @@
-//delete recipe
 const recipeContainer = document.querySelector('.recipes');
 recipeContainer.addEventListener('click', evt => {
     // console.log(evt);

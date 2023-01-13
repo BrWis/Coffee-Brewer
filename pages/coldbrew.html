@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
@@ -40,9 +40,6 @@
         <i class="material-icons">free_breakfast</i>Zapisane kawy</a>
       </li>
       <li><div class="divider"></div></li>
-      <li><a href="author.html" class="waves-effect">
-        <i class="material-icons">person</i>O mnie</a>
-      </li>
       <li><a href="licenses.html" class="waves-effect">
         <i class="material-icons">description</i>Licencje</a>
       </li>
@@ -58,33 +55,33 @@
         <div class="description">
           <h1>Przygotowanie kawy Cold Brew</h1>
             <li><div class="divider"></div></li>
-            <li>KROK</li>
+            <li>Do wybranego naczynia wsyp zmieloną kawę.</li>
             <li><div class="divider"></div></li>
-            <li>KROK</li>
+            <li>Wlej zimną wodę to naczynia.</li>
             <li><div class="divider"></div></li>
-            <li>KROK</li>
+            <li>Przykryj naczynie i pozostaw (w temperaturze pokojowej lub w lodówce) na około 10-16 godzin w zależności od preferencji.</li>
             <li><div class="divider"></div></li>
-            <li>KROK</li>
+            <li>Przelej kawę przez filtr do fusów lub sitko o drobnych oczkach do naczynia.</li>
             <li><div class="divider"></div></li>
-            <li>KROK</li>
+            <li>Kawę przechowuj w lodówce.</li>
             <li><div class="divider"></div></li>
         </div>
         
       <!-- WYBÓR PARAMETRÓW -->
       <div class="slider-column">
         <label class="grind">Stopień zmielenia kawy: <span class="level-value"><output id="slider1">1</output></span></label>
-        <input type="range" min="1" max="5" value="1" oninput="slider1.value = getElementById('title').value = this.value">
+        <input type="range" min="1" max="5" value="1" oninput="slider1.value = getElementById('grindBar8').value = this.value">
         <p id="grind-level">Bardzo grubo<span>Bardzo drobno</span></p>
         <span id="grind-top"></span>
 
         <label class="grind">Ilość kawy: <span class="level-value"><output id="slider2">1</output>g</span></label>
-        <input type="range" min="1" max="200" value="1" oninput="slider2.value = getElementById('coffee-amount').value = this.value">            
+        <input type="range" min="1" max="200" value="1" oninput="slider2.value = getElementById('coffeeBar8').value = this.value">            
 
         <label class="grind">Ilość wody: <span class="level-value"><output id="slider3">1</output>ml</span></label>              
-        <input type="range" min="0" max="2000" value="1" step="10" oninput="slider3.value = getElementById('water-amount').value = this.value">
+        <input type="range" min="0" max="2000" value="1" step="10" oninput="slider3.value = getElementById('waterBar8').value = this.value">
 
         <label class="grind">Temperatura: <span class="level-value"><output id="slider4">1</output>&#176;C</span></label>              
-        <input type="range" min="1" max="100" value="1" oninput="slider4.value = getElementById('temperature').value = this.value">
+        <input type="range" min="1" max="100" value="1" oninput="slider4.value = getElementById('temperatureBar8').value = this.value">
 
       <!-- TIMER -->
         <label class="grind">Minutnik: </label>              
@@ -109,7 +106,7 @@
             <br>
 
             <div class="input-field m6">
-              <select class="validate">
+              <select class="validate" id="methodBar8">
                 <option value="" disabled>Kawiarka</option>
                 <option value="" disabled>Aeropress</option>
                 <option value="" disabled>Dripper</option>
@@ -123,32 +120,32 @@
             </div>
 
             <div class="input-field">
-              <input min="1" max="5" value=1 oninput="this.value = this.value" id="title" type="number" class="validate">
+              <input min="1" max="5" value=1 oninput="this.value = this.value" id="grindBar8" type="number" class="validate">
               <label for="title">Stopień zmielenia kawy</label>
             </div>
 
             <div class="input-field">
-              <input min="1" max="200" value=1 oninput="this.value = this.value" id="coffee-amount" type="number" class="validate">
+              <input min="1" max="200" value=1 oninput="this.value = this.value" id="coffeeBar8" type="number" class="validate">
               <label for="coffee-amount">Ilość kawy [g]</label>
             </div>
 
             <div class="input-field">
-              <input min="1" max="2000" value=1 oninput="this.value = this.value" id="water-amount" type="number" class="validate">
+              <input min="1" max="2000" value=1 oninput="this.value = this.value" id="waterBar8" type="number" class="validate">
               <label for="water-amount">Ilość wody [ml]</label>
             </div>
 
             <div class="input-field">
-              <input min="1" max="100" value=1 oninput="this.value = this.value" id="temperature" type="number" class="validate">
+              <input min="1" max="100" value=1 oninput="this.value = this.value" id="temperatureBar8" type="number" class="validate">
               <label for="temperature">Temperatura [&#176;C]</label>
             </div>
 
             <div class="input-field">
-              <input placeholder="00:00" id="time" type="text" class="validate">
+              <input placeholder="00:00" id="timeBar8" type="text" class="validate">
               <label for="time">Czas [mm:ss]</label>
             </div>
 
             <div class="input-field">
-              <select class="validate">
+              <select class="validate" id="ratingBar8">
                 <option value="" disabled selected>Dodaj ocenę</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -160,7 +157,7 @@
             </div>
 
             <div class="input-field">
-              <input type="text" placeholder="Dodaj notatkę" class="validate" id="description">
+              <input type="text" placeholder="Dodaj notatkę" class="validate" id="noteBar8">
               <label for="description">Notatka</label>
             </div>
 
@@ -175,8 +172,27 @@
 
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDTSZYcLwk-YJLWGlOnwNpWZPo3SdlPeh8",
+        authDomain: "coffee-brewer-6fce2.firebaseapp.com",
+        projectId: "coffee-brewer-6fce2",
+        storageBucket: "coffee-brewer-6fce2.appspot.com",
+        messagingSenderId: "51983230575",
+        appId: "1:51983230575:web:ce43748c9a12b82d88cf9a",
+        measurementId: "G-YK0HGD6ZB0"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
     <script src="../js/ui.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/add_cold.js"></script>
     <script type="text/javascript" src="../js/timer.js"></script>
     
   </body>
